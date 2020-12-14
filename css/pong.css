@@ -81,22 +81,25 @@ body{
 }
 
 .score {
+        padding-top: 70%;
         display: flex;
-        padding-top: 20%;
-        text-align: center;
+        text-align: left;
         font-size: 40px;
     }
     
 #Sgauche {
-    padding-left: 25%;
+
     float: left;
     color: rgb(253, 148, 222);
+    padding-left: 10%;
 }
     
 #Sdroite {
-    padding-right: 25%;
+
+    padding-right: 10%;
     float: right;
     color: rgb(253, 148, 222);
+
 }
 
 /*.ecranDebut{

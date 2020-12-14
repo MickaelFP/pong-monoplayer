@@ -77,7 +77,7 @@ class Balle {
     
         //Droite
         if( this.droite > terrain.largeur) {
-            joueur0.ajoutScore();
+            joueur1.ajoutScore();
             terrain.tiltDroite();
             this.droite = terrain.largeur;
             this.angle = Math.PI - this.angle;
@@ -103,6 +103,7 @@ class Balle {
         if(this.positionX < raquetteGauche.droite) {
             if(this.bas > raquetteGauche.positionY) {
                 if(this.positionY < raquetteGauche.bas) {
+                    joueur0.ajoutScore();
                     this.angle = Math.PI - this.angle;
                     this.accelerer();
 
@@ -116,6 +117,7 @@ class Balle {
             if(this.bas > raquetteDroite.positionY) {
                 if(this.positionY < raquetteDroite.bas) {
                     this.angle = Math.PI - this.angle;
+                    joueur0.ajoutScore();
                     this.accelerer();
 
                     raquetteDroite.changerCouleur();
