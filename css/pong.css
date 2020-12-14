@@ -1,0 +1,161 @@
+/** id > class **/
+
+body{
+    /** permet de centrer les éléments sur la page **/
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    
+    /** on défini les paramètres corps: couleurs, position **/
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    font-family: monospace;
+    
+}
+
+/** on défini les paramètres du terrain: paramètres de la bordure, couleur,position **/
+#terrain{
+    
+    width: 800px;
+    height : 400px;
+    position: relative;
+
+    border:1px solid #fff;
+    border-top-color:rgb(253, 148, 222);
+    border-bottom-color:rgb(253, 148, 222);
+    
+}
+
+.tiltHaut {
+    border-top-color: rgb(253, 148, 222) !important;
+}
+
+.tiltBas {
+    border-bottom-color: rgb(253, 148, 222) !important;
+}
+.tiltGauche {
+    border-left-color: #FFFFFF !important;
+}
+
+.tiltDroite {
+    border-right-color: #FFFFFF !important;
+}
+
+/** on défini les paramètres de la balle: dimensions, couleur,position **/
+#balle{
+    
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(253, 148, 222);
+    border-radius: 100%;
+    top : 50%;
+    left: 50%;
+    
+}
+
+/** on défini les paramètres de la raquette: dimension, couleur, position , insérer une variable -> calculer la variable **/
+.raquette{
+    
+    position: absolute;
+
+    --hauteur: 25%;
+
+    top : calc( 50% - var(--hauteur)/2 );
+
+    width: 10px;
+    height: var(--hauteur);
+    background-color: rgb(253, 148, 222);
+    
+}
+
+#droite{
+    right: 1%;
+}
+
+#gauche{
+    left: 1%;
+}
+
+.score {
+        display: flex;
+        padding-top: 20%;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+#Sgauche {
+    padding-left: 25%;
+    float: left;
+    color: rgb(253, 148, 222);
+}
+    
+#Sdroite {
+    padding-right: 25%;
+    float: right;
+    color: rgb(253, 148, 222);
+}
+
+/*.ecranDebut{
+    transition: all 3s;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: rgb(253, 148, 222);
+    border-radius: 24px;
+    display:inline-block;
+    cursor:pointer;
+    padding:12px 16px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px inset rgb(253, 148, 222);
+    /*box-shadow: 3px 3px 12px #444444;
+    -webkit-box-shadow: 3px 3px 12px #444444;
+    -moz-box-shadow: 3px 3px 12px #444444;
+    */
+/*} 
+
+.btn:hover {
+    padding: 10px;
+    font-size: 1em;
+    color: #5f497a;
+    background-color: #fac08f;
+    border-radius: 24px;
+    display:inline-block;
+    cursor:pointer;
+    padding:12px 16px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px outset #FFFFFF;
+    box-shadow: 3px 3px 12px #444444;
+    -webkit-box-shadow: 3px 3px 12px #444444;
+    -moz-box-shadow: 3px 3px 12px #444444;
+}
+
+.invisible {
+    display: none;
+}

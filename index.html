@@ -1,0 +1,44 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/pong.css">
+        <!--On importe la bibliothèque jQueries-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--<script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>-->
+        <title> PONG </title>
+        
+    </head>
+
+    <!--<body onload="loadSound();">
+        <button onclick="playSound();" class="playSound">Play Sound</button>
+    <body>-->
+        
+    <body>
+        <!--On fait appel aux éléménts que l'on souhaite définir: au "terrain", à la "balle", à la "raquette"-->
+        <div id="terrain">
+
+            <div id="Sgauche" class="score">0
+            </div>
+
+            <div id="Sdroite" class="score">0
+            </div>
+
+            <div id="balle">
+            </div>
+
+            <div id="gauche" class="raquette">
+            </div>
+
+            <div id="droite" class="raquette">
+            </div>
+            
+        </div>
+        <!--On fait appel à notre/nos fichier/s pong.js-->
+    </body>
+
+    <script src="js/Balle.js"></script>
+    <script src="js/Terrain.js"></script>
+    <script src="js/Joueur.js"></script>
+    <script src="js/Raquette.js"></script>
+    <script src="js/Interval.js"></script>
+    <!--<script src="js/Son.js"></script>-->
